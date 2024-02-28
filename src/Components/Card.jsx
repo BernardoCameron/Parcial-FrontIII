@@ -1,8 +1,12 @@
+/* eslint-disable react/prop-types */
+import CardStyle from '../Styles/Card.module.css'
 
-
-const Card = () => {
+const Card = ({ usuario, color }) => {
     return (
-        <div>Card</div>
+        <div className={CardStyle.cardContainer} style={{ backgroundColor: color }}>
+            <h2>Hola {usuario} esta cajita es de tu color favorito 👌</h2>
+
+        </div>
     )
 }
 
